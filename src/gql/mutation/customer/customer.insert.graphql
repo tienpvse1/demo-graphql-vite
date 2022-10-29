@@ -1,0 +1,6 @@
+mutation CreateCustomer($object: laundry_service_customers_insert_input!) {
+  insert_laundry_service_customers_one(object: $object) {
+    phone
+    email
+  }
+}

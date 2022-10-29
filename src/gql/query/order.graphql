@@ -1,0 +1,7 @@
+query Order {
+  laundry_service_orders {
+    order_id
+    staff_id
+    manager_id
+  }
+}

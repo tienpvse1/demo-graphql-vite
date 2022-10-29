@@ -1,0 +1,15 @@
+query Customer {
+  laundry_service_customers {
+    email
+    fullname
+    phone
+    fullname
+    phone
+    customer_id
+  }
+}
+query FindCustomer($email: String!) {
+  laundry_service_customers(where: { email: { _ilike: $email } }) {
+    email
+  }
+}

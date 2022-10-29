@@ -1,0 +1,8 @@
+mutation UpdateCustomer(
+  $object: laundry_service_customers_set_input!
+  $where: laundry_service_customers_bool_exp!
+) {
+  update_laundry_service_customers(_set: $object, where: $where) {
+    affected_rows
+  }
+}
